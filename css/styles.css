@@ -254,28 +254,20 @@ img {
 
 /* Особенности */
 
-.features-title {
-	width: 270px;
-	font-weight: 700;
-	font-size: 14px;
-	margin-bottom: 10px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: var(--black-txt-color-main);
-}
-.features-list {
+.features__list {
 	display: flex;
 }
-.features-list .item {
+
+.features__list .features__item {
 	width: calc((100% - 3 * 30px) / 4);
 	margin-right: 30px;
 }
-.features-list .item:nth-child(4n) {
+
+.features__list .features__item:nth-child(4n) {
 	margin-right: 0;
 }
 
-.features-icon-container {
+.features__icon-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -286,9 +278,20 @@ img {
 	border-radius: 4px;
 }
 
+.features__title {
+	width: 270px;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 10px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--black-txt-color-main);
+}
+
 /* Чем мы занимаемся */
 
-.doing-title {
+.doing__title {
 	font-weight: 700;
 	font-size: 36px;
 	margin-bottom: 50px;
@@ -298,19 +301,19 @@ img {
 	color: var(--black-txt-color-main);
 }
 
-.doing-list {
+.doing__list {
 	display: flex;
 }
-.doing-list .item {
+.doing__list .doing__item {
 	position: relative;
 	width: calc((100% - 2 * 30px) / 3);
 	margin-right: 30px;
 }
-.doing-list .item:nth-child(3n) {
+.doing__list .doing__item:nth-child(3n) {
 	margin-right: 0;
 }
 
-.doing-list-item-title {
+.doing__item-title {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -407,7 +410,7 @@ img {
 
 /* Клиенты */
 
-.clients-title {
+.clients__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -417,15 +420,15 @@ img {
 	color: var(--black-txt-color-main);
 }
 
-.clients-list {
+.clients__list {
 	display: flex;
 }
 
-.clients-list-item:not(:last-child) {
+.clients__item:not(:last-child) {
 	margin-right: 30px;
 }
 
-.clients-list-link {
+.clients__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -437,13 +440,13 @@ img {
 	transition: color var(--anim), border var(--anim);
 }
 
-.clients-list-link:hover,
-.clients-list-link:focus {
+.clients__link:hover,
+.clients__link:focus {
 	color: var(--accent-txt-color);
 	border: 1px solid var(--accent-txt-color);
 }
 
-.clients-list-icon {
+.clients__icon {
 	fill: currentColor;
 }
 
