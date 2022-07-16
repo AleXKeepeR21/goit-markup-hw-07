@@ -59,7 +59,6 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 
-	/* outline: 1px solid tomato; */
 }
 
 .list {
@@ -130,9 +129,6 @@ img {
 	letter-spacing: 0.02em;
 }
 
-/* .header-nav.current {
-	color: var(--accent-txt-color);
-} */
 
 .current {
 	color: var(--accent-txt-color);
@@ -569,16 +565,6 @@ img {
 	padding: 20px 24px;
 }
 
-/* .portfolio-work .item:not(:nth-last-child(- n + 3)) {
-	margin-bottom: 30px;
-} */
-/* .portfolio-work .item:nth-child(3n) {
-	margin-right: 0;
-} */
-
-/* .portfolio-work .item:nth-last-child(- n + 3) {
-	margin-bottom: 0;
-} */
 
 /* Футер */
 
@@ -802,11 +788,8 @@ img {
 	fill: var(--accent-txt-color);
 }
 
-/* .sign-up-forms {
-	display: flex;
-	flex-direction: column;
-} */
-.sign-up-forms strong {
+
+.sign-up-forms-title {
 	font-size: 20px;
 	line-height: 1.15;
 	text-align: center;
@@ -829,17 +812,17 @@ img {
 .sign-up-form-field {
 	position: relative;
 }
-.sign-up-form-field svg {
+.sign-up-form-field-svg {
 	position: absolute;
 	left: 12px;
 	bottom: 11px;
 }
 
-.sign-up-form-field label {
+.sign-up-form-field-label {
 	letter-spacing: 0.01em;
 }
 
-.sign-up-form-field input {
+.sign-up-form-field-input {
 	height: 40px;
 	margin: 0;
 	padding: 0 10px 0 42px;
@@ -848,7 +831,7 @@ img {
 	transition: border var(--anim);
 }
 
-.sign-up-form-field textarea {
+.sign-up-form-field-textarea {
 	width: 448px;
 	height: 120px;
 	resize: none;
@@ -858,24 +841,24 @@ img {
 	transition: border var(--anim);
 }
 
-.sign-up-form-field textarea::placeholder {
+.sign-up-form-field-textarea::placeholder {
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
 }
 
-.sign-up-form-field input:hover,
-.sign-up-form-field textarea:hover,
-.sign-up-form-field input:focus,
-.sign-up-form-field textarea:focus {
+.sign-up-form-field-input:hover,
+.sign-up-form-field-textarea:hover,
+.sign-up-form-field-input:focus,
+.sign-up-form-field-textarea:focus {
 	border: 1px solid var(--accent-bg-color);
 	outline: transparent;
 }
 
-.sign-up-form-field input + svg {
+.sign-up-form-field-input + svg {
 	transition: fill var(--anim);
 }
-.sign-up-form-field input:hover + svg,
-.sign-up-form-field input:focus + svg {
+.sign-up-form-field-input:hover + svg,
+.sign-up-form-field-input:focus + svg {
 	fill: var(--accent-txt-color);
 }
 
